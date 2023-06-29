@@ -1,7 +1,7 @@
-import ProductItem from "./Product";
-import classes from "./Product.module.css";
+import ProductItem from "./ProductItem";
+import classes from "./Products.module.css";
 
-const Product = (props) => {
+const Products = (props) => {
   return (
     <section className={classes.products}>
       <h2>Buy your favorite products</h2>
@@ -16,4 +16,4 @@ const Product = (props) => {
   );
 };
 
-export default Product;
+export default Products;
