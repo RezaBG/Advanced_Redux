@@ -1,4 +1,4 @@
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
+import { useSelector } from "react-redux";
 
 import Cart from "./components/Cart/Cart";
 import Layout from "./components/Layout/Layout";
@@ -14,4 +14,5 @@ function App() {
     </Layout>
   );
 }
+
 export default App;
