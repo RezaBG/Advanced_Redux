@@ -1,12 +1,12 @@
-import Card from "./components/UI/Card";
-import Layout from "./components/Layout/Layout";
-import Product from "./components/Shop/ProductItem";
+import Cart from './components/Cart/Cart';
+import Layout from './components/Layout/Layout';
+import Products from './components/Shop/Products';
 
 function App() {
   return (
     <Layout>
-      <Card />
-      <Product />
+      <Cart />
+      <Products />
     </Layout>
   );
 }

@@ -1,19 +1,23 @@
-import ProductItem from "./ProductItem";
-import classes from "./Products.module.css";
+import Card from '../UI/Card';
+import classes from './ProductItem.module.css';
 
-const Products = (props) => {
+const ProductItem = (props) => {
+  const { title, price, description } = props;
+
   return (
-    <section className={classes.products}>
-      <h2>Buy your favorite products</h2>
-      <ul>
-        <ProductItem
-          title="Test"
-          price={6}
-          description="This is a first product - amazing!"
-        />
-      </ul>
-    </section>
+    <li className={classes.item}>
+      <Card>
+        <header>
+          <h3>{title}</h3>
+          <div className={classes.price}>${price.toFixed(2)}</div>
+        </header>
+        <p>{description}</p>
+        <div className={classes.actions}>
+          <button>Add to Cart</button>
+        </div>
+      </Card>
+    </li>
   );
 };
 
-export default Products;
+export default ProductItem;
